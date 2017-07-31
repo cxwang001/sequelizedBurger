@@ -30,8 +30,8 @@ router.post("/", function(req, res) {
 
 //update the burger upon PUT request with an id
 router.put("/:id", function(req, res) {
-    var condition = "id = " + req.params.id;
-    console.log("here ee condition", condition);
+    // var condition = "id = " + req.params.id;
+    // console.log("here ee condition", condition);
 
     db.burger.update(req.body, {
             where: {
